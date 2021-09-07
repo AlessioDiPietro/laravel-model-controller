@@ -1,0 +1,34 @@
+// header
+.container-header{
+    height: 130px;
+    padding:0 270px;
+    color: $dc_blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-header ul {
+    display: flex;
+}
+.container-header li {
+    margin-left: 30px;
+    &:hover {
+        border-bottom: solid 3px $dc_blue;
+        margin-top: -3px;
+    }
+    a {
+        color: black;
+    }
+    i {
+        color: $dc_blue;
+    }
+    input {
+        border: none;
+        text-align: end;
+        margin-right: 10px;
+        width: 75px;
+        
+    }
+}
+

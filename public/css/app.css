@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-header {
+  height: 130px;
+  padding: 0 270px;
+  color: #0282f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-header ul {
+  display: flex;
+}
+
+.container-header li {
+  margin-left: 30px;
+}
+.container-header li:hover {
+  border-bottom: solid 3px #0282f9;
+  margin-top: -3px;
+}
+.container-header li a {
+  color: black;
+}
+.container-header li i {
+  color: #0282f9;
+}
+.container-header li input {
+  border: none;
+  text-align: end;
+  margin-right: 10px;
+  width: 75px;
+}
+
+.container-main {
+  background-color: #303030;
+}
+.container-main .comics-area {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 80px 270px;
+}
+.container-main .comics-area .card {
+  width: calc(100% / 6);
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+.container-main .comics-area .card h4 {
+  margin-top: 20px;
+}
+.container-main .icon-area {
+  padding: 50px 270px;
+  color: #ffffff;
+  background-color: #0282f9;
+}
+.container-main .icon-area ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-main .icon-area ul li {
+  margin: 0 5px;
+  width: calc(100% / 5);
+}
+.container-main .icon-area ul li img {
+  width: 50px;
+  height: 60px;
+}
+.container-main .icon-area ul li span {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.container-jumbo {
+  background-image: url("../images/jumbotron.jpg");
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+.container-jumbo button {
+  position: absolute;
+  left: 300px;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  background-color: #0282f9;
+  color: #ffffff;
+  font: 23px;
+  padding: 10px 15px;
+  border: none;
+}
+
+footer {
+  color: #797979;
+}
+
+.container-footer-top {
+  padding: 0 180px;
+  background-image: url("../images/footer-bg.jpg");
+  background-color: black;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-footer-top aside {
+  display: inline-block;
+}
+.container-footer-top aside .list {
+  margin-right: 30px;
+  display: flex;
+}
+.container-footer-top aside .list li {
+  width: calc(100% / 3);
+}
+.container-footer-top aside .list li h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.container-footer-top aside p {
+  margin-top: 80px;
+}
+
+.container-footer-bottom {
+  padding: 0 180px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #303030;
+}
+.container-footer-bottom aside ul {
+  display: flex;
+}
+.container-footer-bottom aside ul li {
+  margin-left: 13px;
+}
+.container-footer-bottom aside button {
+  background-color: transparent;
+  border: 2px solid #0282f9;
+  color: white;
+  font-size: 23px;
+}
