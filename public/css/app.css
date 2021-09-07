@@ -85,6 +85,70 @@ a {
   margin-left: 15px;
 }
 
+.info-box-top {
+  padding: 50px 270px;
+  display: flex;
+}
+.info-box-top aside {
+  margin: 0 25px;
+}
+.info-box-top aside h1 {
+  font-size: 40px;
+  color: navy;
+  margin-bottom: 20px;
+}
+.info-box-top aside ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 40px;
+  background-color: #55ba59;
+  color: #ffffff;
+}
+.info-box-top aside p {
+  margin-top: 30px;
+}
+
+.info-box-bottom {
+  padding: 50px 270px;
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+}
+.info-box-bottom aside {
+  margin: 0 20px;
+  width: calc(100% - 20px / 2);
+}
+.info-box-bottom aside h2 {
+  color: navy;
+}
+.info-box-bottom aside li {
+  margin: 0 20px;
+}
+.info-box-bottom aside span {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.icon-box {
+  display: flex;
+  padding: 0 270px;
+  color: grey;
+  background-color: beige;
+}
+.icon-box .box-i {
+  border: 1px solid grey;
+  border-top: none;
+  width: calc(100% / 4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.icon-box .box-i img {
+  width: 50px;
+  height: 60px;
+}
+
 .container-jumbo {
   background-image: url("../images/jumbotron.jpg");
   height: 400px;
@@ -108,7 +172,8 @@ a {
   bottom: 0;
   transform: translate(-50%, 20%);
 }
-.container-jumbo .blue-line {
+
+.blueline {
   height: 100px;
   width: 100%;
   background-color: #0282f9;

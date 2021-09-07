@@ -8,7 +8,7 @@
     <div class="container-jumbo">
         <img src="{{$dettaglioFum['thumb']}}" alt="#">
     </div>
-    <div class="blue-line"></div>
+    <div class="blueline"></div>
 @endsection
 
 @section('main-content')
@@ -41,17 +41,17 @@
                 <li>
                     <span>Art By</span>
                     <span>
-                        @foreach ($dettaglioFum['artists'] as $artist)
-                        <span><a href="#">{{$artist}}</a>,</span>
-                        @endforeach
+                        
+                        <span>Various artists</span>
+                        
                     </span>
                 </li>
                 <li>
                     <span>Written By</span>
                     <span>
-                        @foreach ($dettaglioFum['writers'] as $writer)
-                        <span><a href="#">{{$writer}}</a>,</span>
-                        @endforeach
+                        
+                        <span>Various Writers</span>
+                        
                     </span>
                 </li>
             </ul>
