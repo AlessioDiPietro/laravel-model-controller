@@ -3,16 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Comic;
 
 class DynController extends Controller
 {
     public function home() {
-        $data = ['libreria'=> config('comics')]; 
-        return view('index', $data);
+        $libreria = comic::all(); 
+        return view('index', compact('libreria'));
     }
 
     public function det($id) {
-        $data = ['dettaglioFum'=> config('comics')[$id]]; 
-        return view('details', $data);
+        $dettaglioFum = comic::where('id', $id)->first(); 
+        return view('details', compact('dettaglioFum'));
     }
 }
