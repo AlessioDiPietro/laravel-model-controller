@@ -13,49 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $data = ['libreria'=> config('comics')]; 
-    return view('index', $data);
-})->name('p-home');
+Route::get('/', 'DynController@home' )->name('p-home');
 
 // dettagli fumetto selezionato
-Route::get('/dettagli/{id}',function($id) {
-    $data = ['dettaglioFum'=> config('comics')[$id]]; 
-    return view('details', $data);
-})->name('p-details');
+Route::get('/dettagli/{id}', 'DynController@det')->name('p-details');
 
-Route::get('/personaggi', function () {
-    return view('characters');
-})->name('p-characters');
 
-Route::get('/fumetti', function () {
-    return view('comics');
-})->name('p-comics');
+Route::get('/personaggi','StaticController@charac' )->name('p-characters');
 
-Route::get('/film', function () {
-    return view('movies');
-})->name('p-movies');
+Route::get('/fumetti','StaticController@comic' )->name('p-comics');
 
-Route::get('/serie TV', function () {
-    return view('tvseries');
-})->name('p-tvseries');
+Route::get('/film','StaticController@mov' )->name('p-movies');
 
-Route::get('/giochi', function () {
-    return view('games');
-})->name('p-games');
+Route::get('/serie TV','StaticController@serie' )->name('p-tvseries');
 
-Route::get('/collezionabili', function () {
-    return view('collector');
-})->name('p-collector');
+Route::get('/giochi','StaticController@game' )->name('p-games');
 
-Route::get('/video', function () {
-    return view('video');
-})->name('p-video');
+Route::get('/collezionabili','StaticController@collec' )->name('p-collector');
 
-Route::get('/fan', function () {
-    return view('fans');
-})->name('p-fans');
+Route::get('/video','StaticController@video' )->name('p-video');
 
-Route::get('/novità', function () {
-    return view('news');
-})->name('p-news');
+Route::get('/fan','StaticController@fan' )->name('p-fans');
+
+Route::get('/novità','StaticController@new' )->name('p-news');
