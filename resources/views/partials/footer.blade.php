@@ -46,8 +46,8 @@
         </aside>
 
 
-        <aside> 
-            <img src="{{asset('images/dc-logo-bg.png')}}" alt="">
+        <aside class="img-bg"> 
+            
         </aside>
 
     </div>

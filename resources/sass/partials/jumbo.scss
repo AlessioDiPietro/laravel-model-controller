@@ -14,4 +14,15 @@
         padding: 10px 15px;
         border: none;
     }
+    img{
+        position: absolute;
+        left: 300px;
+        bottom: 0;
+        transform: translate(-50%, 20%); 
+    }
+    .blue-line {
+        height: 100px;
+        width: 100%;
+        background-color: $dc_blue;
+    }
 }

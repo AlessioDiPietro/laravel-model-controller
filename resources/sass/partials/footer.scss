@@ -12,6 +12,7 @@ footer {
     align-items: center;
     aside {
         display: inline-block;
+        width: calc(100% /  2);
 
         .list {
             margin-right: 30px;
@@ -27,6 +28,12 @@ footer {
         p {
             margin-top: 80px;
         }
+    }
+    .img-bg{
+        background-image: url('../images/dc-logo-bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
     }
 }
 .container-footer-bottom {

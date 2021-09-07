@@ -18,13 +18,18 @@ Route::get('/', function () {
     return view('index', $data);
 })->name('p-home');
 
+// dettagli fumetto selezionato
+Route::get('/dettagli/{id}',function($id) {
+    $data = ['dettaglioFum'=> config('comics')[$id]]; 
+    return view('details', $data);
+})->name('p-details');
+
 Route::get('/personaggi', function () {
     return view('characters');
 })->name('p-characters');
 
 Route::get('/fumetti', function () {
-    $data = ['libreria'=> config('comics')];
-    return view('comics',$data);
+    return view('comics');
 })->name('p-comics');
 
 Route::get('/film', function () {

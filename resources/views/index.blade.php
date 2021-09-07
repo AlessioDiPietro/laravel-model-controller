@@ -16,10 +16,10 @@
 
         {{-- comics area --}}
         <div class="comics-area">
-            @foreach ($libreria as $item)
+            @foreach ($libreria as $key => $item)
             <div class="card">
                 <img src="{{$item['thumb']}}" alt="">
-                <h4>{{$item['title']}}</h4>
+                <h4><a href="{{route('p-details', ['id'=> $key])}}">{{$item['title']}}</a></h4>
             </div>
             @endforeach
         </div>
