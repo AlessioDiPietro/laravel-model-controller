@@ -8,12 +8,12 @@ use App\Comic;
 class DynController extends Controller
 {
     public function home() {
-        $libreria = comic::all(); 
+        $libreria = Comic::all(); 
         return view('index', compact('libreria'));
     }
 
     public function det($id) {
-        $dettaglioFum = comic::where('id', $id)->first(); 
+        $dettaglioFum = Comic::where('id', $id)->first(); 
         return view('details', compact('dettaglioFum'));
     }
 }
